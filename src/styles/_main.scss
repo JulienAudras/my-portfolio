@@ -1,5 +1,8 @@
-// Parrrallax
 
+.black-bg{
+  background-color: black;
+}
+// Parrralax
 
 .animation, .animation_layer {
 	height: 1000px;
@@ -9,6 +12,7 @@
   display: block;
 	position: relative;
 	z-index: 10;
+  background-color: black;
 }
 
 .parallax{
@@ -29,6 +33,7 @@
 
 #artback {
   background: url(../images/p1.jpg) center no-repeat;
+  
   
 }
 

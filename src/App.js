@@ -3,17 +3,18 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Logo from "./components/Logo";
 import { useSpring, animated } from "@react-spring/web";
 import logo from "./images/logo.png";
+import Intro from "./components/Intro";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App black-bg">
       {/* <Logo /> */}
 
       <Parallax pages={2} class="animation">
         <ParallaxLayer offset={0.2} speed={0.5}>
           <div className="animation_layer parallax" id="logoInt"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.3}>
+        <ParallaxLayer offset={0} speed={0.4}>
           <div
             className="animation_layer parallax"
             id="artback"
@@ -22,7 +23,7 @@ function App() {
             {/* <Logo /> */}
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.1} speed={0.5}>
+        <ParallaxLayer offset={0.1} speed={0.7}>
           <div className="animation_layer parallax" id="mountainsBg"></div>
           <img src={logo} alt="logo" className="logo" />
         </ParallaxLayer>
@@ -48,17 +49,21 @@ function App() {
         <ParallaxLayer offset={0.35} speed={0.86}>
           <div className="animation_layer parallax" id="manClimbing"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.35} speed={0.8}>
+        <ParallaxLayer offset={0.35} speed={0.8} factor={0.25}>
           <div className="animation_layer parallax" id="treesLine"></div>
         </ParallaxLayer>
         {/* <ParallaxLayer offset={0.96} speed={0.1}>
           <div class="animation_layer parallax" id="blackbg"></div>
         </ParallaxLayer> */}
-        {/* <ParallaxLayer offset={0} speed={0.35}>
-          <div class="animation_layer parallax" id="jungle5"></div>
+        {/* <ParallaxLayer offset={0.99} speed={0.8} factor={1}>
+          <div class="animation_layer parallax" id="blackbg"></div>
         </ParallaxLayer> */}
-        <ParallaxLayer offset={1} speed={0.25}>
-          {/* <TextBlock /> */}
+        <ParallaxLayer
+          offset={0.9}
+          speed={0.85}
+          style={{ backgroundSize: "cover" }}
+        >
+          <Intro />
         </ParallaxLayer>
       </Parallax>
       {/* <section className="section intro">
