@@ -36,3 +36,139 @@
     transform: rotate(360deg);
   }
 }
+
+.animation, .animation_layer {
+	height: 1000px;
+}
+
+.animation {
+  display: block;
+	position: relative;
+	z-index: 10;
+}
+
+.animation_layer {
+	background-position: bottom center;
+	background-size: auto ;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
+}
+.animation_layer.parallax {
+	position: fixed;
+}
+
+#artback {
+  background: url(./images/p1.jpg) center no-repeat;
+  
+}
+
+#mountainsBg {
+  background: url(./images/p2.png) center no-repeat;
+}
+
+/* #logoland {
+  background-image: url(./images/logo_land.png);
+} */
+
+#mountainsFront {
+  background: url(./images/p3.png) center no-repeat;
+  background-size: cover;
+}
+
+#mountainRight {
+  background: url(./images/p5.png)right no-repeat;
+}
+
+#treesFront {
+  background: url(./images/treesFront.png) left no-repeat;
+}
+
+#manClimbing {
+  background: url(./images/p7.png) right no-repeat;
+}
+
+#treesLine{
+  background-image: url(./images/p4.png);
+}
+
+#blackbg{
+  background-image: url(./images/black.jpg);
+}
+/* #manonmountain {
+  background-image: url(./images/p7.png) no-repeat;  
+} */
+
+
+.string {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  animation: move 4s infinite;
+}
+
+#white {
+  color: white;
+}
+
+#e06c75 {
+  color: #e06c75;
+}
+
+#61afef {
+  color: #61afef;
+}
+
+.logo {
+  position: relative;
+  top: 8.6vmin;
+  animation: white-out 5s infinite;
+}
+
+.closure::after {
+  content: '';
+  position: absolute;
+  height: 25vmin;
+  width: 40vmin;
+  background: #282c34;
+  transform: translate(-45vmin, -24.5vmin);
+}
+
+.closure::before {
+  content: '';
+  position: absolute;
+  height: 25vmin;
+  width: 40vmin;
+  background: #282c34;
+  transform: translate(-40vmin, 5vmin);
+}
+
+.one {
+  color: #fa8231;
+}
+
+.two {
+  color: white;
+}
+
+.three {
+  color: #c678dd;
+}
+
+.four {
+  color: #a9b0bd;
+}
+
+@keyframes move {
+  25% {
+    transform: translatey(-5.8vmin);
+    opacity: 1;
+  }
+  50% {
+    transform: translatey(-11vmin);
+  }
+  75% {
+    transform: translatey(-16.5vmin);
+  }
+}
+
