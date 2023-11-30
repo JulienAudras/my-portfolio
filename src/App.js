@@ -2,6 +2,7 @@ import "./styles/style.css";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import logoBig from "./images/logoBig.png";
 import Intro from "./components/Intro";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -62,10 +63,10 @@ function App() {
           offset={0.6}
           speed={0.85}
           // style={{ backgroundSize: "cover" }}
-          factor={0.1}
           z-index={1}
         >
           <Intro />
+          <Skills />
         </ParallaxLayer>
         {/* <ParallaxLayer offset={1} speed={0.8} z-index={2}>
           <div className="animation_layer parallax" id="treesReverse"></div>

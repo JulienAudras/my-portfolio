@@ -147,4 +147,20 @@
 }
 
 
-
+.sectionTitle{
+  background-color: #4E6CB4;
+  color:white;
+  font-family: "Maiden Orange";
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  letter-spacing: 3px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  width:fit-content;
+  margin: auto;
+  clip-path: polygon(100% 10%, 90% 50%, 100% 90%, 0 90%, 10% 50%, 0 10%);
+}
