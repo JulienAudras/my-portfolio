@@ -1,5 +1,5 @@
 .logo{
-  font-size: 2vmin;
+  // font-size: 2vmin;
   font-family: JetBrains Mono, monospace;
   // height: 100vh;
   // width: 100vw;
@@ -8,9 +8,13 @@
   align-items: center;
   color: #e4bb68;
   position: relative;
-  // top: 4rem;
+  top: 10rem;
   margin: auto;
   z-index: 10;
+  max-width: 80%;
+  @media screen and (max-width: 768px){
+    max-width:98%;
+}
   
   
   &__whiteText {

@@ -130,7 +130,7 @@ const Intro = () => {
             <span className ="introSection__paragraph--span introSection__paragraphFive--span">et</span>
             <span className ="introSection__paragraph--span introSection__paragraphFive--span">accessibles.</span>
         </p>
-        <p className="introSection__paragraph introSection__paragraphSix">
+        {/* <p className="introSection__paragraph introSection__paragraphSix">
             <span className ="introSection__paragraph--span introSection__paragraphSix--span">Mon</span>
             <span className ="introSection__paragraph--span introSection__paragraphSix--span">engagement</span>
             <span className ="introSection__paragraph--span introSection__paragraphSix--span">consiste</span>
@@ -148,7 +148,7 @@ const Intro = () => {
             <span className ="introSection__paragraph--span introSection__paragraphSix--span">de</span>
             <span className ="introSection__paragraph--span introSection__paragraphSix--span">développement</span>
             <span className ="introSection__paragraph--span introSection__paragraphSix--span">web.</span>
-        </p>  
+        </p>   */}
     </section>
   )
 }

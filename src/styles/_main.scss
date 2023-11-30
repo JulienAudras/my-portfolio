@@ -32,13 +32,13 @@
 }
 
 #artback {
-  background: url(../images/p1.jpg) center no-repeat;
+  background: url(../images/p1.webp) center no-repeat;
   
   
 }
 
 #mountainsBg {
-  background: url(../images/p2.png) center no-repeat;
+  background: url(../images/p2.webp) center no-repeat;
 }
 
 #logoInt{
@@ -53,13 +53,16 @@
 } */
 
 #mountainsFront {
-  background: url(../images/p3.png) center no-repeat;
+  background: url(../images/p3.webp) center no-repeat;
 
   background-size: cover;
 }
 
 #mountainRight {
-  background: url(../images/p5.png)right no-repeat;
+  background: url(../images/p5.webp)right no-repeat;
+  @media screen and (max-width: 1400px){
+    display: none;
+}
 }
 
 #birds {
@@ -67,19 +70,35 @@
 }
 
 #treesFront {
-  background: url(../images/treesFront.png) left no-repeat;
+  background: url(../images/treesFront.webp) left no-repeat;
 }
 
 #manClimbing {
-  background: url(../images/p7.png) right no-repeat;
+  background: url(../images/p7.webp) right no-repeat;
+  @media screen and (max-width: 768px){
+    display: none;
+}
 }
 
 #treesLine{
-  background-image: url(../images/p4.png);
+  background-image: url(../images/p4.webp);
 }
 
 #blackbg{
   background-image: url(../images/black.jpg);
+}
+
+#treesReverse{
+  background-image: url(../images/treesreverse.png); 
+  // background-size: cover;
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+#trip{
+  background-image: url(../images/trip.jpg);
 }
   
 // Scroll icon
@@ -101,6 +120,10 @@
   border-radius: 1em;
   margin-left: 4rem;
   margin-top: 8rem;
+  @media screen and (max-width: 768px){
+    margin: auto;
+    margin-top: 6rem;
+}
 
   &__dot {
     display: block;
