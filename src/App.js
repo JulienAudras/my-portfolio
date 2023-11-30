@@ -59,7 +59,7 @@ function App() {
           <div class="animation_layer parallax" id="blackbg"></div>
         </ParallaxLayer> */}
         <ParallaxLayer
-          offset={0.5}
+          offset={0.6}
           speed={0.85}
           // style={{ backgroundSize: "cover" }}
           factor={0.1}
