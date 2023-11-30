@@ -265,6 +265,14 @@
 @media screen and (max-width: 768px) {
   .introSection__paragraph {
     width: 85%;
+    font-family: "BioRhyme";
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .introSection__paragraph {
+    width: 95%;
+    font-size: 1rem;
   }
 }
 .introSection__paragraph--span {
