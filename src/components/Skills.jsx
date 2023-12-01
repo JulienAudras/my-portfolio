@@ -27,7 +27,7 @@ const Skills = () => {
             <p className="skillsSection__content--article--text">Je dispose de compétences solides en React, notamment dans la mise en place de routes dynamiques à l'aide du routeur React pour assurer une navigation efficace au sein de l'application. Ma maîtrise du contexte me permet de partager des données entre les composants de manière optimale, facilitant une communication fluide. De plus, je suis capable de gérer un état global avec des solutions telles que Redux et Zustand, assurant une gestion cohérente des données à l'échelle de l'ensemble de l'application. J'ai également l'habitude de travailler avec des bibliothèque extérieures telles que Spring ou ag grids.</p>
             <div className ="skillsSection__content--article--iconContainer">
                 <img src={reduxLogo} alt="redux logo" className="skillsSection__content--article--iconContainer--icon"/>
-                <img src={zustandLogo} alt="zustand logo" className="skillsSection__content--article--iconContainer--icon"/>
+                <img src={zustandLogo} alt="zustand logo" id="zustandLogo" className="skillsSection__content--article--iconContainer--icon"/>
                 {/* <img src={routeurLogo} alt="routeur logo" className="skillsSection__content--article--iconContainer--icon"/> */}
             </div>
         </article>

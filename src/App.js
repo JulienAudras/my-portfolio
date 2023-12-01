@@ -10,10 +10,10 @@ function App() {
       {/* <Logo /> */}
 
       <Parallax pages={3} class="animation">
-        <ParallaxLayer offset={0.2} speed={0.5}>
+        {/* <ParallaxLayer offset={0.2} speed={0.5}>
           <div className="animation_layer parallax" id="logoInt"></div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.4}>
+        </ParallaxLayer> */}
+        <ParallaxLayer offset={0} speed={0.5}>
           <div
             className="animation_layer parallax"
             id="artback"
@@ -22,7 +22,7 @@ function App() {
             {/* <Logo /> */}
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.1} speed={0.7}>
+        <ParallaxLayer offset={0.1} speed={1}>
           <div className="animation_layer parallax" id="mountainsBg"></div>
           {/* <img src={logo} alt="logo" className="logo" /> */}
           <img src={logoBig} alt="logo" className="logo" id="logoBig" />

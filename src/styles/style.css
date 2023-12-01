@@ -738,7 +738,7 @@
   position: relative;
 }
 .skillsSection__content {
-  margin-top: 200px;
+  margin-top: 4rem;
   display: flex;
   flex-wrap: wrap;
   z-index: 2;
@@ -748,13 +748,27 @@
   max-width: 34%;
   margin: auto;
 }
+@media screen and (max-width: 768px) {
+  .skillsSection__content--article {
+    min-width: 95%;
+    max-width: 95%;
+    margin: auto;
+  }
+}
 .skillsSection__content--article--imgContainer {
-  width: 100%;
+  margin: auto;
   display: flex;
   justify-content: center;
 }
 .skillsSection__content--article--imgContainer--img {
+  max-width: 100%;
   margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .skillsSection__content--article--imgContainer--img {
+    max-width: 95%;
+    margin: auto;
+  }
 }
 .skillsSection__content--article--text {
   color: white;
@@ -776,6 +790,21 @@
   padding-right: 1rem;
 }
 .skillsSection__content--article--iconContainer--icon {
-  max-width: 50%;
-  max-height: 120px;
+  max-width: 220px;
+}
+@media screen and (max-width: 1024px) {
+  .skillsSection__content--article--iconContainer--icon {
+    max-width: 145px;
+  }
+}
+
+#zustandLogo {
+  width: 204px;
+  height: 160px;
+}
+@media screen and (max-width: 1024px) {
+  #zustandLogo {
+    width: 136.64px;
+    height: 106.64px;
+  }
 }/*# sourceMappingURL=style.css.map */
