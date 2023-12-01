@@ -1,6 +1,6 @@
 
 .black-bg{
-  background-color: black;
+  // background-color: black;
 }
 // Parrralax
 
@@ -11,14 +11,16 @@
 .animation {
   display: block;
 	position: relative;
-	z-index: 10;
+	// z-index: 10;
   background-color: black;
 }
 
 .parallax{
   display: flex;
 }
-
+.parralaxOne{
+  height: fit-content;
+}
 .animation_layer {
 	background-position: bottom center;
 	background-size: auto ;
@@ -65,8 +67,8 @@
 }
 }
 
-#birds {
-  background: url(../images/birds.png) ;
+#roots {
+  background: url(../images/bgroots.jpg) ;
 }
 
 #treesFront {
@@ -84,8 +86,16 @@
   background-image: url(../images/p4.webp);
 }
 
+#redtreesLine{
+  background-image: url(../images/p4rr.png);
+}
 #blackbg{
+  background-image: url(../images/blackTest.png);
+}
+
+#black{
   background-image: url(../images/black.jpg);
+
 }
 
 #treesReverse{
@@ -96,11 +106,20 @@
   background-size: cover;
  
 }
-
+#hills{
+  background-image: url(../images/hills.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #trip{
   background-image: url(../images/trip.jpg);
 }
-  
+
+#darkforest{
+  background-image: url(../images/darkforest4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 // Scroll icon
 @keyframes scroll {
   0%   { transform: translateY(0); opacity: 1; }
@@ -142,7 +161,8 @@
 }
 
 .section{
-  background-color: black;
+  // background-color: white;
+  // background-color: transparent;
   // height:200px;
 }
 
@@ -162,5 +182,5 @@
   padding-left: 5rem;
   width:fit-content;
   margin: auto;
-  clip-path: polygon(100% 10%, 90% 50%, 100% 90%, 0 90%, 10% 50%, 0 10%);
+  clip-path: polygon(100% 10%, 95% 50%, 100% 90%, 0 90%, 05% 50%, 0 10%);
 }

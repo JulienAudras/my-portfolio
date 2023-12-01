@@ -9,7 +9,7 @@ function App() {
     <div className="App black-bg">
       {/* <Logo /> */}
 
-      <Parallax pages={2} class="animation">
+      <Parallax pages={3} class="animation">
         <ParallaxLayer offset={0.2} speed={0.5}>
           <div className="animation_layer parallax" id="logoInt"></div>
         </ParallaxLayer>
@@ -41,9 +41,9 @@ function App() {
         <ParallaxLayer offset={0.38} speed={0.7}>
           <div className="animation_layer parallax" id="mountainRight"></div>
         </ParallaxLayer>
-        {/* <ParallaxLayer offset={0.08} speed={0.7}>
-          <div className="animation_layer parallax" id="birds"></div>
-        </ParallaxLayer> */}
+        <ParallaxLayer offset={0.99} speed={0.7}>
+          <div className="animation_layer parallax" id=""></div>
+        </ParallaxLayer>
         <ParallaxLayer offset={0.55} speed={0.78}>
           <div className="animation_layer parallax" id="treesFront"></div>
         </ParallaxLayer>
@@ -53,24 +53,36 @@ function App() {
         <ParallaxLayer offset={0.35} speed={0.8} factor={0.25}>
           <div className="animation_layer parallax" id="treesLine"></div>
         </ParallaxLayer>
-        {/* <ParallaxLayer offset={0.99} speed={1.1}>
-          <div class="animation_layer parallax" id="blackbg"></div>
+        {/* <ParallaxLayer offset={1} speed={0.8}>
+          <div class="animation_layer parallax" id="darkForest"></div>
+        </ParallaxLayer> */}
+
+        {/* <ParallaxLayer offset={0.99} speed={0.9}>
+          <div class="animation_layer parallax" id="hills"></div>
         </ParallaxLayer> */}
         {/* <ParallaxLayer offset={0.99} speed={0.8} factor={1}>
-          <div class="animation_layer parallax" id="blackbg"></div>
+          <div class="animation_layer parallax" id="roots"></div>
         </ParallaxLayer> */}
+        <ParallaxLayer offset={1} speed={1.6}>
+          <div className="animation_layer parallax" id="darkforest"></div>
+        </ParallaxLayer>
+        {/* <ParallaxLayer offset={1} speed={1.6}>
+          <div className="animation_layer parallax" id="redtreesLine"></div>
+        </ParallaxLayer> */}
+        <ParallaxLayer offset={1} speed={1.4}>
+          <div className="animation_layer parallax" id="treesLine"></div>
+        </ParallaxLayer>
+
         <ParallaxLayer
           offset={0.6}
-          speed={0.85}
+          speed={1}
           // style={{ backgroundSize: "cover" }}
           z-index={1}
         >
           <Intro />
           <Skills />
         </ParallaxLayer>
-        {/* <ParallaxLayer offset={1} speed={0.8} z-index={2}>
-          <div className="animation_layer parallax" id="treesReverse"></div>
-        </ParallaxLayer> */}
+
         {/* <ParallaxLayer offset={1} speed={0.8} z-index={2}>
           <div className="animation_layer parallax" id="trip"></div>
         </ParallaxLayer> */}
