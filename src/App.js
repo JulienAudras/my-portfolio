@@ -11,10 +11,10 @@ function App() {
     initialContentHeight = 1.5;
   } 
    else if (window.innerWidth > 350) {
-  initialContentHeight = 3.5;
+  initialContentHeight = 5;
 } 
   else {
-    initialContentHeight = 9;
+    initialContentHeight = 6;
   }
 
   const [contentHeight, setContentHeight] = useState(initialContentHeight);
