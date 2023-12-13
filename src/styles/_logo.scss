@@ -1,95 +1,16 @@
 .logo{
-  // font-size: 2vmin;
-  font-family: JetBrains Mono, monospace;
-  // height: 100vh;
-  // width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #e4bb68;
   position: relative;
-  top: 10rem;
   margin: auto;
   z-index: 10;
   max-width: 80%;
+  margin-top: 150px;
+  margin-bottom: 150px;
   @media screen and (max-width: 768px){
     max-width:98%;
 }
   
-  
-  &__whiteText {
-    color: white;
-  }
-  
-  &__e06c75Text {
-    color: #e06c75;
-  }
-  
-  &__61afefText {
-    color: #61afef;
-  }
-  
-  &__string {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    animation: move 4s infinite;
-  
-    &--logo {
-      position: relative;
-      top: 8.6vmin;
-      animation: white-out 5s infinite;
-      &--one {
-        color: #fa8231;
-      }
-      
-      &--two {
-        color: white;
-      }
-      
-      &--three {
-        color: #c678dd;
-      }
-      
-      &--four {
-        color: #a9b0bd;
-      }
-    }
-  }
-    
-  .closure::after {
-    content: '';
-    position: absolute;
-    height: 25vmin;
-    width: 40vmin;
-    background: #282c34;
-    transform: translate(-45vmin, -24.5vmin);
-  }
-  
-  .closure::before {
-    content: '';
-    position: absolute;
-    height: 25vmin;
-    width: 40vmin;
-    background: #282c34;
-    transform: translate(-40vmin, 5vmin);
-  }
-  
-  
-  
-  @keyframes move {
-    25% {
-      transform: translatey(-5.8vmin);
-      opacity: 1;
-    }
-    50% {
-      transform: translatey(-11vmin);
-    }
-    75% {
-      transform: translatey(-16.5vmin);
-    }
-  }
-
 }
-
-  

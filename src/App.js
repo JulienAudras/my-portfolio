@@ -1,95 +1,70 @@
 import "./styles/style.css";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import logoBig from "./images/logoBig.png";
-import Intro from "./components/Intro";
-import Skills from "./components/Skills";
+import Content from "./components/Content";
+import { useState } from "react";
 
 function App() {
+  let initialContentHeight;
+  if (window.innerWidth > 1024) {
+    initialContentHeight = 1.1;
+  } else if (window.innerWidth > 768) {
+    initialContentHeight = 1.5;
+  } 
+   else if (window.innerWidth > 350) {
+  initialContentHeight = 2.75;
+} 
+  else {
+    initialContentHeight = 3;
+  }
+
+  const [contentHeight, setContentHeight] = useState(initialContentHeight);
+
+  const handleContentHeightChange = (height) => {
+    const windowHeight = window.innerHeight;
+    const newHeight = height / windowHeight;
+    setContentHeight(newHeight);
+  };
+
+
   return (
     <div className="App black-bg">
-      {/* <Logo /> */}
-
-      <Parallax pages={3} class="animation">
-        {/* <ParallaxLayer offset={0.2} speed={0.5}>
-          <div className="animation_layer parallax" id="logoInt"></div>
-        </ParallaxLayer> */}
-        <ParallaxLayer offset={0} speed={0.5}>
+      <Parallax pages={2.1 + contentHeight} className="animation"  >
+        <ParallaxLayer offset={0} speed={0.7}>
           <div
             className="animation_layer parallax"
-            id="artback"
-            // style={{ zIndex: 1 }}
+            id="artback"       
           >
-            {/* <Logo /> */}
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.1} speed={1}>
           <div className="animation_layer parallax" id="mountainsBg"></div>
-          {/* <img src={logo} alt="logo" className="logo" /> */}
-          <img src={logoBig} alt="logo" className="logo" id="logoBig" />
-          {/* <img src={logo} alt="logo" className="logo" id="logoSmall" /> */}
         </ParallaxLayer>
-        {/* <ParallaxLayer offset={0.2} speed={0.2}>
-          <div className="animation_layer parallax" id="logoInt"></div>
-        </ParallaxLayer> */}
         <ParallaxLayer offset={0.3} speed={0.8}>
-          {/* <img src={logo} alt="logo" className="logo" /> */}
-          <div className="animation_layer parallax" id="mountainsFront"></div>
-          <span class="scroll-icon">
-            <span class="scroll-icon__dot"></span>
-          </span>
+          <div className="animation_layer parallax" id="mountainsFront"></div>       
         </ParallaxLayer>
-        <ParallaxLayer offset={0.38} speed={0.7}>
+        <ParallaxLayer offset={0.58} speed={0.8}>
           <div className="animation_layer parallax" id="mountainRight"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.99} speed={0.7}>
-          <div className="animation_layer parallax" id=""></div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0.55} speed={0.78}>
+        <ParallaxLayer offset={0.85} speed={0.78}>
           <div className="animation_layer parallax" id="treesFront"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.35} speed={0.85}>
+        <ParallaxLayer offset={0.67} speed={0.85}>
           <div className="animation_layer parallax" id="manClimbing"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.35} speed={0.8} factor={0.25}>
           <div className="animation_layer parallax" id="treesLine"></div>
         </ParallaxLayer>
-        {/* <ParallaxLayer offset={1} speed={0.8}>
-          <div class="animation_layer parallax" id="darkForest"></div>
-        </ParallaxLayer> */}
-
-        {/* <ParallaxLayer offset={0.99} speed={0.9}>
-          <div class="animation_layer parallax" id="hills"></div>
-        </ParallaxLayer> */}
-        {/* <ParallaxLayer offset={0.99} speed={0.8} factor={1}>
-          <div class="animation_layer parallax" id="roots"></div>
-        </ParallaxLayer> */}
-        <ParallaxLayer offset={1} speed={1.6}>
-          <div className="animation_layer parallax" id="darkforest"></div>
-        </ParallaxLayer>
-        {/* <ParallaxLayer offset={1} speed={1.6}>
-          <div className="animation_layer parallax" id="redtreesLine"></div>
-        </ParallaxLayer> */}
-        <ParallaxLayer offset={1} speed={1.4}>
-          <div className="animation_layer parallax" id="treesLine"></div>
-        </ParallaxLayer>
-
+        <ParallaxLayer offset={1} speed={0} className="pageTwo" />
         <ParallaxLayer
-          offset={0.6}
+          offset={0.05}
           speed={1}
-          // style={{ backgroundSize: "cover" }}
-          z-index={1}
+          z-index={10}
+          className="parallax_content animation_layer"   
         >
-          <Intro />
-          <Skills />
+          <Content onHeightChange={handleContentHeightChange}/>
         </ParallaxLayer>
-
-        {/* <ParallaxLayer offset={1} speed={0.8} z-index={2}>
-          <div className="animation_layer parallax" id="trip"></div>
-        </ParallaxLayer> */}
       </Parallax>
-      {/* <section className="section intro">
-        <h2 className="section__title">About</h2>
-      </section> */}
+     
     </div>
   );
 }

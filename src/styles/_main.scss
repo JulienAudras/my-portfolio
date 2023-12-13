@@ -1,62 +1,43 @@
 
-// .black-bg{
-//   // background-color: black;
-// }
-// // Parrralax
-
-.animation, .animation_layer {
-	height: 1000px;
-}
-
-.animation {
+.animation{
+  min-height: fit-content;
   display: block;
-	position: relative;
-	// z-index: 10;
+
   background-color: black;
+}
+.animation_layer {
+	height: 1500px;
+  overflow: visible;
 }
 
 .parallax{
   display: flex;
 }
-.parralaxOne{
-  height: fit-content;
-}
+
 .animation_layer {
 	background-position: bottom center;
 	background-size: auto ;
 	background-repeat: repeat-x;
 	width: 100%;
-	// position: relative;
-  // display: flex;
 }
 .animation_layer.parallax {
 	position: fixed;
 }
 
+.pageTwo{
+  height: auto !important;
+  min-height: 100vh;
+}
 #artback {
   background: url(../images/p1.webp) center no-repeat;
-  
-  
 }
 
 #mountainsBg {
   background: url(../images/p2.webp) center no-repeat;
 }
 
-#logoInt{
-  background-image: url(../images/logo.png) center no-repeat ;
-  background-size: cover;
-  position: relative;
-  z-index:10;
-}
-
-/* #logoland {
-  background-image: url(./images/logo_land.png);
-} */
-
 #mountainsFront {
   background: url(../images/p3.webp) center no-repeat;
-
   background-size: cover;
 }
 
@@ -65,10 +46,6 @@
   @media screen and (max-width: 1400px){
     display: none;
 }
-}
-
-#roots {
-  background: url(../images/bgroots.jpg) ;
 }
 
 #treesFront {
@@ -86,40 +63,6 @@
   background-image: url(../images/p4.webp);
 }
 
-#redtreesLine{
-  background-image: url(../images/p4rr.png);
-}
-#blackbg{
-  background-image: url(../images/blackTest.png);
-}
-
-#black{
-  background-image: url(../images/black.jpg);
-
-}
-
-#treesReverse{
-  background-image: url(../images/treesreverse.png); 
-  // background-size: cover;
-  
-  background-repeat: no-repeat;
-  background-size: cover;
- 
-}
-#hills{
-  background-image: url(../images/hills.jpg); 
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#trip{
-  background-image: url(../images/trip.jpg);
-}
-
-#darkforest{
-  background-image: url(../images/darkforest4.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 // Scroll icon
 @keyframes scroll {
   0%   { transform: translateY(0); opacity: 1; }
@@ -135,10 +78,11 @@
   z-index: 10;
   height: 3em;
   width: 1.5em;
-  border: .25em solid #818589;
+  border: .25em solid black;
   border-radius: 1em;
-  margin-left: 4rem;
-  margin-top: 8rem;
+  margin: auto;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
   @media screen and (max-width: 768px){
     margin: auto;
     margin-top: 6rem;
@@ -148,7 +92,8 @@
     display: block;
     position: absolute;
     left: 50%;
-    background: #818589;
+    // background: #818589;
+    background: black;
     height: .5em;
     width: .5em;
     top: .6em;
@@ -160,11 +105,6 @@
   }
 }
 
-// .section{
-//   // background-color: white;
-//   // background-color: transparent;
-//   // height:200px;
-// }
 
 
 .sectionTitle{
@@ -183,4 +123,53 @@
   width:fit-content;
   margin: auto;
   clip-path: polygon(100% 10%, 95% 50%, 100% 90%, 0 90%, 05% 50%, 0 10%);
+  max-width: 95%;
+  @media screen and (max-width: 576px){
+    font-size: 2.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+}
+
+
+.slideIconContainer{
+  width:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+
+@keyframes slide {
+  0% { transform: translateX(-150%); }
+  50% { transform: translateX(150%); }
+  100% { transform: translateX(-150%); }
+}
+
+.slideIcon__icon {
+  animation: slide 2s linear infinite;
+  @media screen and (max-width: 576px){
+    width: 28%;
+
+}
+}
+
+.contentSlider{
+  cursor: move; 
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+
+  &:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+  }
+}
+
+.parallax_content{
+  position: relative;
+  z-index: 10;
 }
