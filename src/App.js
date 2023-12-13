@@ -14,7 +14,7 @@ function App() {
   initialContentHeight = 3.5;
 } 
   else {
-    initialContentHeight = 4;
+    initialContentHeight = 9;
   }
 
   const [contentHeight, setContentHeight] = useState(initialContentHeight);
