@@ -11,7 +11,7 @@ function App() {
     initialContentHeight = 1.5;
   } 
    else if (window.innerWidth > 350) {
-  initialContentHeight = 2.75;
+  initialContentHeight = 3.5;
 } 
   else {
     initialContentHeight = 3;
