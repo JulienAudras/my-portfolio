@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="App black-bg">
-      <Parallax pages={2.1 + contentHeight} className="animation"  >
+      <Parallax pages={2.3 + contentHeight} className="animation"  >
         <ParallaxLayer offset={0} speed={0.7}>
           <div
             className="animation_layer parallax"
