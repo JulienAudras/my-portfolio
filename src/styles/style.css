@@ -226,6 +226,27 @@
   flex-direction: column;
   align-items: center;
 }
+.introSection__bg {
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 55%;
+  margin-top: 5rem;
+  border-radius: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .introSection__bg {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .introSection__bg {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .introSection__bg {
+    width: 100%;
+  }
+}
 .introSection__paragraph {
   font-family: "Rancho";
   font-size: 2.2rem;
@@ -233,20 +254,15 @@
   color: white;
   opacity: 1;
   text-align: center;
-  width: 50%;
-  margin: auto;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 2.5rem;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
-@media screen and (max-width: 1024px) {
-  .introSection__paragraph {
-    width: 75%;
-  }
-}
 @media screen and (max-width: 768px) {
   .introSection__paragraph {
-    width: 85%;
     font-family: "BioRhyme";
     font-size: 1.5rem;
   }
@@ -264,9 +280,6 @@
 }
 .introSection__paragraph--span::after {
   content: " ";
-}
-.introSection__paragraphOne {
-  margin-top: 6rem;
 }
 .introSection__paragraphOne--span:nth-child(1) {
   animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
@@ -736,6 +749,8 @@
 .skillsSection__content--group--article--list {
   list-style-type: none;
   padding: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
 }
 .skillsSection__content--group--article--list--text {
   color: white;
@@ -809,8 +824,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 @media screen and (max-width: 1024px) {
   :root .cards {
@@ -908,7 +921,7 @@
   font-family: Georgia, Times, serif;
   margin-right: 0.05em;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   :root .card_text {
     overflow: auto;
     max-height: 20rem;
@@ -927,6 +940,17 @@
 }
 :root .card_text strong {
   color: var(--reactBlue);
+}
+:root .card_link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--white);
+  gap: 0.5rem;
+}
+:root .card_link--icon {
+  width: 35px;
+  height: auto;
 }
 :root .upcharge {
   position: relative;

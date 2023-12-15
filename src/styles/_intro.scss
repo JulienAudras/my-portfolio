@@ -17,26 +17,39 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &__bg{
+        background-color: rgba(0, 0, 0, 0.25);
+        width:55%;
+        margin-top: 5rem;
+        border-radius: 50px;
+          @media screen and (max-width: 1024px){
+            width:80%;
+        }
+        @media screen and (max-width: 768px){
+            width:90%;
+        }
+        @media screen and (max-width: 576px){
+            width:100%;
+        }
+    }
+    
     
     &__paragraph{
         font-family: "Rancho";
         font-size: 2.2rem;
         font-weight: 400;
-        // color: white;
         color: white;
         opacity: 1;
-        // max-width: 40ch;
         text-align: center;
-        width:50%;
-        margin: auto;
+        width:95%;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 2.5rem;
         transform: scale(0.94);
         animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-        @media screen and (max-width: 1024px){
-            width:75%;
-        }
+        
         @media screen and (max-width: 768px){
-            width:85%;
             font-family:"BioRhyme";
             font-size: 1.5rem;
         }
@@ -57,7 +70,7 @@
     }
 
     &__paragraphOne{
-        margin-top: 6rem;
+        
         &--span:nth-child(1){
             animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
         }
