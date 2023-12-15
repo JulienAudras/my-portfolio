@@ -22,7 +22,7 @@ function App() {
   const handleContentHeightChange = (height) => {
     const windowHeight = window.innerHeight;
     const newHeight = height / windowHeight;
-    setContentHeight(newHeight + 0.5);
+    setContentHeight(newHeight + 1);
   };
 
 
